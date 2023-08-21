@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRPV | Earn Economy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="earnEconomy.css">
+</head>
+<body>
+    <div class="ban">
+        <div class="navbar">
+            <img class="small-logo" src="https://media.discordapp.net/attachments/1122238473018036274/1133376150798868590/Borderrpppp.png?width=460&height=457">
+            <a href="#">Main</a>
+            <a href="file:///C:/Users/T.K/Desktop/BorderRP/promoCodes.html">Promo Codes</a>
+            <a href="#">Shop</a>
+            <a href="#">Grind Economy</a>
+            <p class="Economy" id="Economy">Economy Cash: 0</p>
+        </div>
+        <center><p class="Title"><b>Earn Economy by Filling Applications</b></p></center>
+        <div class="container">
+            <img class="AppLogo" src="https://www.clipartmax.com/png/small/154-1542390_software-application-icon-png.png">
+            <p class="AppTitle"><b>Introduction Application</b></p><br>
+            <p class="AppDescr"><b>Description:</b> Fill this very simple application about yourself and earn 150 Economy Cash!</p>
+            <button id="StartApplication"><b>Fill Application</b></button>
+        </div>
+    </div>
+        
+        <script>
+            var economyCash = localStorage.getItem("economyCash")
+            document.getElementById("Economy").textContent = "Economy Cash: " + economyCash
+
+            document.getElementById("StartApplication").onclick = function openApp() {
+                window.open("file:///C:/Users/T.K/Desktop/BorderRP/Application1.html");
+            }
+        </script>
+</body>
+</html>
